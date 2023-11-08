@@ -11,12 +11,12 @@ const parceiros = [
   { parceirosId: 84297701780, nome: 'Carlos Oliveira' },
 ];
 
-const parceirosPF = parceiros.filter((parceiro) => parceiro.parceirosId.length === 11);
-const parceirosPJ = parceiros.filter((parceiro) => parceiro.parceirosId.length === 14);
+const parceirosPF = parceiros.filter((parceiro) => parceiro.parceirosId.toString().length === 11);
+const parceirosPJ = parceiros.filter((parceiro) => parceiro.parceirosId.toString().length === 14);
 
 const parceirosAgrupados = {
   PF: parceirosPF,
   PJ: parceirosPJ,
 };
 
-console.log(parceirosAgrupados);  
+console.log(parceirosAgrupados);
